@@ -1,0 +1,8 @@
+rm var/cache/* var/generation/* var/view_preprocessed/* var/page_cache/*  pub/static/frontend/* pub/static/adminhtml/* -R
+php bin/magento setup:upgrade
+php bin/magento setup:di:compile
+php bin/magento setup:static-content:deploy -f
+php bin/magento cache:flush
+chmod -R 777 var/ generated/ pub/static/ pub/media/
+
+

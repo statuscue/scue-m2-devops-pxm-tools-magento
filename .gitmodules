@@ -1,0 +1,9 @@
+[submodule "src"]
+	path = src
+	url = git@github.com:statuscue/scue-m2-magento.ua.git
+	branch = master
+
+[submodule "configs"]
+	path = configs
+	url = git@github.com:statuscue/scue-m2-devops-config-files.git
+	branch = pxm-tools
